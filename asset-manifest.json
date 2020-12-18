@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/unofficial-deezer/static/css/main.ab7136cd.chunk.css",
+    "main.js": "/unofficial-deezer/static/js/main.25131f03.chunk.js",
+    "main.js.map": "/unofficial-deezer/static/js/main.25131f03.chunk.js.map",
+    "runtime-main.js": "/unofficial-deezer/static/js/runtime-main.aaaca546.js",
+    "runtime-main.js.map": "/unofficial-deezer/static/js/runtime-main.aaaca546.js.map",
+    "static/js/2.6a1838a0.chunk.js": "/unofficial-deezer/static/js/2.6a1838a0.chunk.js",
+    "static/js/2.6a1838a0.chunk.js.map": "/unofficial-deezer/static/js/2.6a1838a0.chunk.js.map",
+    "static/js/3.438ef4ae.chunk.js": "/unofficial-deezer/static/js/3.438ef4ae.chunk.js",
+    "static/js/3.438ef4ae.chunk.js.map": "/unofficial-deezer/static/js/3.438ef4ae.chunk.js.map",
+    "index.html": "/unofficial-deezer/index.html",
+    "static/css/main.ab7136cd.chunk.css.map": "/unofficial-deezer/static/css/main.ab7136cd.chunk.css.map",
+    "static/js/2.6a1838a0.chunk.js.LICENSE.txt": "/unofficial-deezer/static/js/2.6a1838a0.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/unofficial-deezer/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.aaaca546.js",
+    "static/js/2.6a1838a0.chunk.js",
+    "static/css/main.ab7136cd.chunk.css",
+    "static/js/main.25131f03.chunk.js"
+  ]
+}
