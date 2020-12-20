@@ -1,5 +1,9 @@
 import React from 'react';
 
-const Sidebar = () => <div>Sidebar</div>;
+const Sidebar = () => (
+  <aside data-testid="sidebar">
+    <nav>Sidebar</nav>
+  </aside>
+);
 
 export default Sidebar;
