@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/unofficial-deezer/static/css/main.8da9be96.chunk.css",
-    "main.js": "/unofficial-deezer/static/js/main.84b116c2.chunk.js",
-    "main.js.map": "/unofficial-deezer/static/js/main.84b116c2.chunk.js.map",
+    "main.js": "/unofficial-deezer/static/js/main.b6e20ee1.chunk.js",
+    "main.js.map": "/unofficial-deezer/static/js/main.b6e20ee1.chunk.js.map",
     "runtime-main.js": "/unofficial-deezer/static/js/runtime-main.f5fe0d26.js",
     "runtime-main.js.map": "/unofficial-deezer/static/js/runtime-main.f5fe0d26.js.map",
     "static/css/2.95f25948.chunk.css": "/unofficial-deezer/static/css/2.95f25948.chunk.css",
-    "static/js/2.393f9d23.chunk.js": "/unofficial-deezer/static/js/2.393f9d23.chunk.js",
-    "static/js/2.393f9d23.chunk.js.map": "/unofficial-deezer/static/js/2.393f9d23.chunk.js.map",
+    "static/js/2.9eab2426.chunk.js": "/unofficial-deezer/static/js/2.9eab2426.chunk.js",
+    "static/js/2.9eab2426.chunk.js.map": "/unofficial-deezer/static/js/2.9eab2426.chunk.js.map",
     "static/js/3.927d6a2a.chunk.js": "/unofficial-deezer/static/js/3.927d6a2a.chunk.js",
     "static/js/3.927d6a2a.chunk.js.map": "/unofficial-deezer/static/js/3.927d6a2a.chunk.js.map",
     "index.html": "/unofficial-deezer/index.html",
     "static/css/2.95f25948.chunk.css.map": "/unofficial-deezer/static/css/2.95f25948.chunk.css.map",
     "static/css/main.8da9be96.chunk.css.map": "/unofficial-deezer/static/css/main.8da9be96.chunk.css.map",
-    "static/js/2.393f9d23.chunk.js.LICENSE.txt": "/unofficial-deezer/static/js/2.393f9d23.chunk.js.LICENSE.txt"
+    "static/js/2.9eab2426.chunk.js.LICENSE.txt": "/unofficial-deezer/static/js/2.9eab2426.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.f5fe0d26.js",
     "static/css/2.95f25948.chunk.css",
-    "static/js/2.393f9d23.chunk.js",
+    "static/js/2.9eab2426.chunk.js",
     "static/css/main.8da9be96.chunk.css",
-    "static/js/main.84b116c2.chunk.js"
+    "static/js/main.b6e20ee1.chunk.js"
   ]
 }
