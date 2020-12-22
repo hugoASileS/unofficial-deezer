@@ -1,6 +1,5 @@
 import { all, call, put, takeLatest } from '@redux-saga/core/effects';
 import { GET_ALBUM, GET_ALBUMS, setAlbum, setAlbums } from '../ducks/albumsDucks';
-import { setPlaylist } from '../ducks/playerDucks';
 import { setArtists } from '../ducks/artistsDucks';
 
 function albums() {
@@ -19,11 +18,6 @@ export function* getAlbums() {
     const data = yield call(albums);
     yield put(setAlbums(data.albums));
     yield put(setArtists(data.artists));
-    yield put(
-      setPlaylist(data.playlists)
-    ); /*
-    yield put(setPodcasts(data.podcasts));
-    yield put(setTracks(data.tracks));*/
   } catch (e) {
     yield put(setAlbums(e));
   }

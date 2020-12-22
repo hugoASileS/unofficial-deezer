@@ -1,23 +1,42 @@
 const SET_PLAYLIST = '[Player] set playlist';
+const NEXT_TRACK = '[Player] next track';
 
-export function setPlaylist(playlist) {
+export function setPlaylist(payload) {
   return {
     type: SET_PLAYLIST,
-    playlist,
+    payload,
+  };
+}
+
+export function nextTrack() {
+  return {
+    type: NEXT_TRACK,
   };
 }
 
 const initialStatePlayer = {
-  data: [],
-  total: 0,
+  tracks: [],
+  current: undefined,
 };
 
 export function playerReducer(state = initialStatePlayer, action) {
   switch (action.type) {
     case SET_PLAYLIST:
+      const { tracks, track: current } = action.payload;
       return {
         ...state,
-        playlist: action.playlist,
+        tracks,
+        current,
+      };
+    case NEXT_TRACK:
+      let next = state.current;
+      if (state.tracks.length > state.current.index + 1) {
+        next = { ...state.tracks[state.current.index + 1], index: state.current.index + 1 };
+      }
+
+      return {
+        ...state,
+        current: next,
       };
     default:
       return state;
