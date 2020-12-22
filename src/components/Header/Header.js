@@ -7,10 +7,10 @@ const Header = () => (
       <Navbar.Brand href="#home" className="mr-auto">
         Unofficial Deezer
       </Navbar.Brand>
-      <Form inline>
+      {/*<Form inline>
         <FormControl type="text" placeholder="Search" className="mr-sm-2" />
         <Button variant="outline-primary">Search</Button>
-      </Form>
+      </Form>*/}
     </Navbar>
   </header>
 );

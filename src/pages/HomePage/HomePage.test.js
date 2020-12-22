@@ -5,7 +5,7 @@ describe('Testing HomePage', () => {
   it('should have the title', () => {
     render(<HomePage />);
 
-    const title = screen.getByText(/Este es el home/i);
+    const title = screen.getByText(/Este sera el home próximamente/i);
     expect(title).toBeInTheDocument();
   });
 });

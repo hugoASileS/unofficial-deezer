@@ -2,11 +2,9 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getAlbum } from '../../redux/ducks/albumsDucks';
 import { useParams } from 'react-router';
-import { Link } from 'react-router-dom';
 import { TracksList } from '../../components/Track';
-import { selectArtist } from '../../redux/ducks/artistsDucks';
 import { Loading } from '../../components/Loading';
-import { Badge, Row } from 'react-bootstrap';
+import { Row } from 'react-bootstrap';
 import AlbumCover from './components/AlbumCover';
 import ArtistCover from '../ArtistsPage/components/ArtistCover';
 

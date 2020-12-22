@@ -1,20 +1,21 @@
 import React from 'react';
 import Track from './Track';
 import PropTypes from 'prop-types';
+import { StyledTable } from './component/Styled';
 
 const TracksList = ({ tracks }) => {
   if (tracks.length === 0) {
     return <div>No hay canciones</div>;
   }
-  return tracks.map((track, index) => {
-    return (
-      <table key={track.id}>
-        <tbody>
-          <Track index={index} track={track} />
-        </tbody>
-      </table>
-    );
-  });
+  return (
+    <StyledTable>
+      <tbody>
+        {tracks.map((track, index) => {
+          return <Track index={index} track={track} key={track.id} tracks={tracks} />;
+        })}
+      </tbody>
+    </StyledTable>
+  );
 };
 
 TracksList.propTypes = {
