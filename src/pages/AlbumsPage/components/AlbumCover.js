@@ -6,24 +6,24 @@ import { Badge, Col } from 'react-bootstrap';
 import PropTypes from 'prop-types';
 import TracksList from '../../../components/Track/TracksList';
 
-const AlbumCover = ({ album, match, showArtist = true }) => {
+const AlbumCover = ({ album, showArtist = true }) => {
   const dispatch = useDispatch();
 
   return (
     <Col>
-      <Link to={`${match.url}/${album.id}`}>
+      <Link to={`/albums/${album.id}`}>
         <img src={album.cover_medium} alt="album cover" />
       </Link>
       <dl>
         <dt>Album</dt>
         <dd>
-          <Link to={`${match.url}/${album.id}`}>{album.title}</Link>
+          <Link to={`/albums/${album.id}`}>{album.title}</Link>
         </dd>
         {showArtist && (
           <>
             <dt>Artista</dt>
             <dd>
-              <Link to={`artists/${album.artist.id}`} onClick={() => dispatch(selectArtist(album.artist))}>
+              <Link to={`/artists/${album.artist.id}`} onClick={() => dispatch(selectArtist(album.artist))}>
                 {album.artist.name}
               </Link>
             </dd>
@@ -44,7 +44,6 @@ const AlbumCover = ({ album, match, showArtist = true }) => {
 
 TracksList.propTypes = {
   album: PropTypes.object,
-  cover: PropTypes.object,
   showArtist: PropTypes.bool,
 };
 export default AlbumCover;
