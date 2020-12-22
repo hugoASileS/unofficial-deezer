@@ -4,7 +4,7 @@ import NotFoundPage from '../pages/NotFoundPage';
 import HomePage from '../pages/HomePage';
 import { AlbumDetailPage, AlbumsPage } from '../pages/AlbumsPage';
 import { ArtistsDetailPage, ArtistsPage } from '../pages/ArtistsPage';
-import GenresPage from '../pages/GenresPage';
+import GenresDetailPage from '../pages/GenresPage';
 import { useDispatch } from 'react-redux';
 import { getAlbums } from '../redux/ducks/albumsDucks';
 
@@ -21,7 +21,7 @@ const AppRouter = () => {
       <Route exact path="/albums/:albumId" component={AlbumDetailPage} />
       <Route exact path="/artists" component={ArtistsPage} />
       <Route exact path="/artists/:artistId" component={ArtistsDetailPage} />
-      <Route exact path="/genres" component={GenresPage} />
+      <Route exact path="/genres/:genreId" component={GenresDetailPage} />
       <Route exact component={NotFoundPage} />
     </Switch>
   );

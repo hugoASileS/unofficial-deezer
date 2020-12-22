@@ -30,7 +30,6 @@ export function getAlbum(albumId) {
 const initialStateAlbums = {
   data: [],
   total: 0,
-  selected: {},
 };
 
 export function albumsReducer(state = initialStateAlbums, action) {

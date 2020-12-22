@@ -17,7 +17,6 @@ function album(albumId) {
 export function* getAlbums() {
   try {
     const data = yield call(albums);
-    console.log({ data });
     yield put(setAlbums(data.albums));
     yield put(setArtists(data.artists));
     yield put(
@@ -26,7 +25,6 @@ export function* getAlbums() {
     yield put(setPodcasts(data.podcasts));
     yield put(setTracks(data.tracks));*/
   } catch (e) {
-    console.log({ e });
     yield put(setAlbums(e));
   }
 }

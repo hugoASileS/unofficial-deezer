@@ -3,7 +3,7 @@ import MainPlayer from './';
 import { Provider } from 'react-redux';
 import { generateStore } from '../../redux/rootStore';
 
-describe('Testing MainPlayer', () => {
+describe('Testing Track', () => {
   it('renders learn react link', () => {
     render(
       <Provider store={generateStore()}>

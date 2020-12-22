@@ -1,21 +1,21 @@
 import { call, put, takeLatest } from '@redux-saga/core/effects';
-import { GET_ARTISTS, setArtists } from '../ducks/artistsDucks';
+import { GET_ARTIST_TRACKS, setTracks } from '../ducks/artistsDucks';
 
-function albums() {
-  return fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/302127/tracks').then((response) =>
-    response.json()
-  );
+function fetchArtist(artistId) {
+  return fetch(
+    `https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/${artistId}/top?limit=50`
+  ).then((response) => response.json());
 }
 
-export function* getArtists() {
+export function* getArtist({ artistId }) {
   try {
-    const data = yield call(albums);
-    yield put(setArtists(data));
+    const data = yield call(fetchArtist, artistId);
+    yield put(setTracks(data));
   } catch (e) {
-    yield put(setArtists(e));
+    yield put(setTracks(e));
   }
 }
 
 export default function* getAsyncArtists() {
-  yield takeLatest(GET_ARTISTS, getArtists);
+  yield takeLatest(GET_ARTIST_TRACKS, getArtist);
 }

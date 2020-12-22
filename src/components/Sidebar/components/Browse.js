@@ -11,17 +11,14 @@ const StyledNavLink = styled(NavLink)`
 
 const Browse = () => (
   <Nav defaultActiveKey="/" className="flex-column">
-    <Nav.Link as={StyledNavLink} to="/" exact={true}>
+    <Nav.Link as={StyledNavLink} to="/" exact>
       Home
     </Nav.Link>
-    <Nav.Link as={StyledNavLink} to="/albums">
+    <Nav.Link as={StyledNavLink} to="/albums" exact>
       Albums
     </Nav.Link>
-    <Nav.Link as={StyledNavLink} to="/artists">
+    <Nav.Link as={StyledNavLink} to="/artists" exact>
       Artistas
-    </Nav.Link>
-    <Nav.Link as={StyledNavLink} to="/genres">
-      Generos
     </Nav.Link>
   </Nav>
 );

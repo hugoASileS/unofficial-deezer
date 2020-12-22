@@ -4,8 +4,6 @@ import { useSelector } from 'react-redux';
 const MainPlayer = () => {
   const playlist = useSelector((state) => state.players);
 
-  console.log(playlist);
-
   return (
     <footer data-testid="player" className="fixed-bottom">
       Main player
