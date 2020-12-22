@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
-import AlbumsPage from './';
 import { Provider } from 'react-redux';
 import { generateStore } from '../../redux/rootStore';
+import AlbumsPage from './AlbumsPage';
 
 fdescribe('Testing AlbumsPage', () => {
   it('should have the title', () => {
@@ -11,7 +11,7 @@ fdescribe('Testing AlbumsPage', () => {
       </Provider>
     );
 
-    const title = screen.getByText(/Este es el listado de albums/i);
+    const title = screen.getByText(/Albums/i);
     expect(title).toBeInTheDocument();
   });
 });

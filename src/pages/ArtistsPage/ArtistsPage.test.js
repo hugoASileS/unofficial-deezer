@@ -1,11 +1,17 @@
 import { render, screen } from '@testing-library/react';
-import ArtistsPage from './';
+import ArtistsPage from './ArtistsPage';
+import { generateStore } from '../../redux/rootStore';
+import { Provider } from 'react-redux';
 
 describe('Testing ArtistsPage', () => {
   it('should have the title', () => {
-    render(<ArtistsPage />);
+    render(
+      <Provider store={generateStore()}>
+        <ArtistsPage />
+      </Provider>
+    );
 
-    const title = screen.getByText(/Este es el listado de artistas/i);
+    const title = screen.getByText(/Artistas/i);
     expect(title).toBeInTheDocument();
   });
 });
