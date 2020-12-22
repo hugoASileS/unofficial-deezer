@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import Header from './';
 
-describe('Testing Header', () => {
+describe('Testing Loading', () => {
   it('renders learn react link', () => {
     render(<Header />);
 

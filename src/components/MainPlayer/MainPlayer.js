@@ -2,11 +2,13 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 
 const MainPlayer = () => {
-  const playlist = useSelector((state) => state.player.playlist);
+  const playlist = useSelector((state) => state.players);
 
-  console.log(playlist);
-
-  return <footer data-testid="player">Main player</footer>;
+  return (
+    <footer data-testid="player" className="fixed-bottom">
+      Main player
+    </footer>
+  );
 };
 
 export default MainPlayer;

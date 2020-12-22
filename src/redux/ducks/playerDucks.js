@@ -8,7 +8,8 @@ export function setPlaylist(playlist) {
 }
 
 const initialStatePlayer = {
-  playlist: {},
+  data: [],
+  total: 0,
 };
 
 export function playerReducer(state = initialStatePlayer, action) {

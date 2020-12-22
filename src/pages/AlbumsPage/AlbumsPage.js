@@ -1,18 +1,18 @@
-import React, { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
-import { setPlaylist } from '../../redux/ducks/playerDucks';
-import { getAlbums } from '../../redux/ducks/AlbumsDucks';
+import React from 'react';
+import { useSelector } from 'react-redux';
+import AlbumCover from './components/AlbumCover';
+import { Loading } from '../../components/Loading';
+import { Row } from 'react-bootstrap';
 
-const AlbumsPage = () => {
-  const dispatch = useDispatch();
-  useEffect(() => {
-    console.log('en el useEffect');
-    dispatch(getAlbums());
-  }, [dispatch]);
+const AlbumsPage = ({ match }) => {
+  const albums = useSelector((state) => state.albums);
+  if (!albums) {
+    return <Loading />;
+  }
   return (
     <div>
-      Este es el listado de albums
-      <button onClick={() => dispatch(setPlaylist({}))}>play</button>
+      <h2>Albums</h2>
+      <Row>{albums.data && albums.data.map((album) => <AlbumCover key={album.id} album={album} match={match} />)}</Row>
     </div>
   );
 };

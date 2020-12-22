@@ -1,6 +1,8 @@
-import { all } from '@redux-saga/core/effects';
+import { fork } from '@redux-saga/core/effects';
 import getAsyncAlbums from './sagas/albumsSaga';
+import getAsyncArtists from './sagas/artistsSaga';
 
 export default function* rootSaga() {
-  yield all([getAsyncAlbums()]);
+  yield fork(getAsyncAlbums);
+  yield fork(getAsyncArtists);
 }
