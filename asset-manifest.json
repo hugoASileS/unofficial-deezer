@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/unofficial-deezer/static/css/main.f28cae7b.chunk.css",
-    "main.js": "/unofficial-deezer/static/js/main.84089a52.chunk.js",
-    "main.js.map": "/unofficial-deezer/static/js/main.84089a52.chunk.js.map",
-    "runtime-main.js": "/unofficial-deezer/static/js/runtime-main.825ffb6f.js",
-    "runtime-main.js.map": "/unofficial-deezer/static/js/runtime-main.825ffb6f.js.map",
+    "main.js": "/unofficial-deezer/static/js/main.bf380b6e.chunk.js",
+    "main.js.map": "/unofficial-deezer/static/js/main.bf380b6e.chunk.js.map",
+    "runtime-main.js": "/unofficial-deezer/static/js/runtime-main.fc6858b2.js",
+    "runtime-main.js.map": "/unofficial-deezer/static/js/runtime-main.fc6858b2.js.map",
     "static/css/2.95f25948.chunk.css": "/unofficial-deezer/static/css/2.95f25948.chunk.css",
-    "static/js/2.8f9491da.chunk.js": "/unofficial-deezer/static/js/2.8f9491da.chunk.js",
-    "static/js/2.8f9491da.chunk.js.map": "/unofficial-deezer/static/js/2.8f9491da.chunk.js.map",
-    "static/js/3.afdadaa3.chunk.js": "/unofficial-deezer/static/js/3.afdadaa3.chunk.js",
-    "static/js/3.afdadaa3.chunk.js.map": "/unofficial-deezer/static/js/3.afdadaa3.chunk.js.map",
+    "static/js/2.15a2b248.chunk.js": "/unofficial-deezer/static/js/2.15a2b248.chunk.js",
+    "static/js/2.15a2b248.chunk.js.map": "/unofficial-deezer/static/js/2.15a2b248.chunk.js.map",
+    "static/js/3.5bf05782.chunk.js": "/unofficial-deezer/static/js/3.5bf05782.chunk.js",
+    "static/js/3.5bf05782.chunk.js.map": "/unofficial-deezer/static/js/3.5bf05782.chunk.js.map",
     "index.html": "/unofficial-deezer/index.html",
     "static/css/2.95f25948.chunk.css.map": "/unofficial-deezer/static/css/2.95f25948.chunk.css.map",
     "static/css/main.f28cae7b.chunk.css.map": "/unofficial-deezer/static/css/main.f28cae7b.chunk.css.map",
-    "static/js/2.8f9491da.chunk.js.LICENSE.txt": "/unofficial-deezer/static/js/2.8f9491da.chunk.js.LICENSE.txt"
+    "static/js/2.15a2b248.chunk.js.LICENSE.txt": "/unofficial-deezer/static/js/2.15a2b248.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.825ffb6f.js",
+    "static/js/runtime-main.fc6858b2.js",
     "static/css/2.95f25948.chunk.css",
-    "static/js/2.8f9491da.chunk.js",
+    "static/js/2.15a2b248.chunk.js",
     "static/css/main.f28cae7b.chunk.css",
-    "static/js/main.84089a52.chunk.js"
+    "static/js/main.bf380b6e.chunk.js"
   ]
 }
